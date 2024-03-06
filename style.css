@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --primary-color-dark: grey;
+    --text-light: white;
+    --height-of-nav: 15vh;
+}
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: "Titillium Web", sans-serif;
+
+}
+
+.mainPages {
+    font-family: "Titillium Web", sans-serif;
+
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: cover;
+    position: absolute;
+    padding:  4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(105, 122, 122, 0.6);
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+
+}
+
+nav .logo {
+    color: var(--text-light);
+    font-size: 2vw;
+    font-weight: 700;
+
+
+}
+ nav ul {
+    display: flex;
+    gap: 2.5vw;
+    list-style: none;
+ }
+
+ nav ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 1.5vw;
+    font-weight: 500;
+    transition: 0.35s;
+ }
+
+ nav ul li a:hover {
+    color: var(--primary-color-dark);
+ }
+
+ .content {
+    text-align: center;
+    color: var(--text-light);
+ }
+
+ .content h1 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 8vw;
+    font-weight: 900;
+    font-style: normal;
+ }
+ 
+.content p {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 3vw;
+    margin-bottom: 10%;
+    color: rgb(253, 255, 255);
+}
+
+.content .learnMore {
+    padding: 4%;
+    width: 45%;
+    margin: auto;
+    border-radius: 50px;
+    font-size: 3vw;
+    font-family: "Titillium Web", sans-serif;
+    background-color: rgb(224, 236, 238);
+    color: rgb(172, 179, 188);
+    transition: .3s;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.content .learnMore:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.line {
+    background-color: rgb(65, 105, 62);
+    width: 100%;
+    padding: .4%;
+
+}
+
+h1 {
+    font-family: "Titillium Web", sans-serif;
+    padding-top: 15%;
+    font-size: 8vw;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--text-light);
+
+}
+
+p {
+    font-family: "Titillium Web", sans-serif;
+}
+
+h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 5vw;
+    font-style: normal;
+    color: var(--text-light)
+
+}
+
+h3 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 3vw;
+    font-style: normal;
+    color: var(--text-light)
+}
+
+.secOne {
+    width: 100%;
+    padding-bottom: 30%;
+    background-color: rgb(147, 214, 173);
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.secOne h2 {
+    font-family: "Titillium Web", sans-serif;
+    padding-bottom: 10%;
+    
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
+    font-style: normal;
+    color: rgb(216, 255, 221);
+}
+
+
+.secOne h1 {
+    padding-bottom: 10%;
+    color: rgb(94, 200, 107);
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+div {
+    display: block;
+}
+
+.secOne p {
+    text-align: center;
+    color: rgb(249, 249, 249);
+    padding: 12%;
+    display: flex;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2.5vw;
+    margin-bottom: auto;
+
+}
+
+
+.secOne .container {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    background-color: rgb(95, 158, 114);
+    border-radius: 60%;
+    flex-shrink: 0;
+}
+
+.secTwo {
+    background-color: #a2e1a4;
+    width: 100%;
+    padding-bottom: 20%;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--text-light);
+
+}
+
+.secTwo .mainImg {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    text-align: center;
+
+}
+
+.secTwo .imgContainer img {
+    border-radius: 100px;
+    width: 10vw; 
+
+
+}
+
+.secTwo h2 {
+    padding-top: 25%;
+    padding-bottom: 5%;
+    font-size: 5vw;
+    text-align: center;
+    color: rgb(100,159,65);
+
+}
+
+.secTwo p {
+    padding: 10%;
+    padding-top: 2%;
+    font-size: 2.5vw;
+    font-style: normal;
+    text-align: center;
+    color: rgb(109, 142, 90);
+
+}
+.secTwo .lim {
+    padding-bottom: 5%;
+    font-size: 5vw;
+    
+}
+
+.secTwo .text {
+    display: block;
+    margin-bottom: auto;
+
+}
+.secTwo .mainText h3 {
+    padding-top: 10%;
+    padding-bottom: 15%;
+    text-decoration: none;
+}
+
+.secTwo h3 {
+    font-size: 5vw;
+    text-decoration: underline;
+    color: rgb(100, 159, 65);
+}
+
+.secTwo .imgContainer p {
+    display: block;
+    padding-top: 9%;
+}
+
+
+.secThree {
+    background-color: rgb(124, 217, 167);
+    padding-bottom: 4%;
+}
+
+.secThree h2 { 
+    text-align: center;
+    font-size: 5vw;
+    padding: 7%;
+    padding-top: 25%;
+    padding-bottom: 15%;
+    color: rgb(226, 248, 248);
+
+
+}
+
+.secThree p {
+    text-align: left;
+    font-size: 2.5vw;
+}
+
+.secThree h3 {
+    display: block;
+    display: inline-block;
+    text-align: center;
+    padding-left: 5.5%;
+    padding-top: 10%;
+    font-size: 3.5vw;
+    color: rgb(225, 251, 251);
+}
+
+.secThree .spaceOne {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20%;
+}
+
+.secThree .text {
+    padding: 4.5%;
+    padding-top: 10%;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(213, 252, 252);
+}
+
+.secThree .img {
+    width: 50vw;
+    padding: 4%;
+    padding-right: 2%;
+}
+
+.secFour {
+    background-color: rgb(155, 229, 170);
+    padding-bottom: 20%;
+}
+
+.secFour h2 {
+    text-align: center;
+    font-size: 5vw;
+    padding: 7%;
+    color: #468a48;
+    padding-top: 15%;
+    padding-bottom: 2%;
+    
+
+}
+
+.secFour .img {
+    width: 45vw; 
+    padding-left: 7%;
+    padding-right: 10%;
+
+
+}
+
+.secFour .button {
+    padding: 5%;
+    background-color: rgb(185, 255, 206);
+    border-radius: 50px;
+    flex-direction: row;
+    font-size: 4vw;
+    text-decoration: none;
+    padding-right: 5%;
+    text-align: center;
+    color: rgb(56, 151, 113);
+    cursor: pointer;
+
+}
+
+.secFour p {
+    padding: 10%;
+    padding: 0%;
+    padding-bottom: 15%;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2.5vw;
+    font-style: normal;
+    text-align: center;
+    color: rgb(77, 168, 102);
+}
+
+.secFour .button:hover {
+    background-color: rgb(116, 183, 161);
+    color: rgb(231, 252, 241);
+
+}
+
+.secFour .container {
+    display: flex;
+    align-items: center;
+}
+
+.secFive {
+    width: 100%;
+    padding-bottom: 30%;
+    background-color: rgb(121, 144, 85);
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--text-light);
+    background-image: url(images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 100%;
+    
+
+}
+
+.secFive h1 {
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    font-style: normal;
+    padding-bottom: 10%;
+    color: rgb(84, 153, 167);
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: rgb(226, 230, 237);
+}
+
+.secFive h2 {
+    text-decoration: underline;
+}
+.secFive .container {
+    background-color: rgb(154, 208, 202);
+    text-align: center;
+    padding: 4%;
+    border-radius: 40px;
+    margin: auto;
+    width: 70%;
+    flex-shrink: 0;
+
+}
+.secFive p {
+    padding-top: 6%;
+    font-size: 2.5vw;
+}
+
+.secFive img {
+    width: 95%;
+}
+
+.secSix {
+    background-color: rgb(124, 217, 199);
+    padding-bottom: 20%;
+}
+
+.secSix h2 {
+    text-align: center;
+    font-size: 5vw;
+    padding: 7%;
+    color: #e0fbf8;
+    padding-top: 15%;
+    padding-bottom: 1%;
+}
+
+.secSix .column {
+    float: left;
+    width: 33.33%;
+    padding: 3%;
+}
+.secSix .row h3{
+    text-align: center;
+}
+.secSix .row {
+    background-color: rgba(64, 152, 136, 0.391);
+}
+
+.secSix .row p {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 6%;
+    font-size: 2vw;
+}
+
+.secSix p {
+    text-align: center;
+    color: aliceblue;
+    padding: 4%;
+    font-size: 2.5vw;
+    padding-top: 1%;
+    padding-bottom: 10%;
+}
+
+.secSix .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.secSix .text {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+
+.secSix img {
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+.secSeven {
+    background-color: rgb(164, 235, 232);
+    padding-bottom: 20%;
+}
+
+.secSeven h2 {
+    text-align: center;
+    font-size: 5vw;
+    padding: 7%;
+    color: #4ebbae;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.secSeven p {
+    text-align: center;
+    color: rgb(102, 181, 166);
+    padding: 4%;
+    font-size: 2.5vw;
+    padding-top: 1%;
+    padding-bottom: 10%;
+}
+.secSeven .meet p {
+    -webkit-text-stroke: #197064;
+    -webkit-text-stroke-width: .5px;
+}
+
+.secSeven img {
+    width: 45vw;
+    padding: 4%;
+    border-radius: 20%;
+}
+
+.secSeven .text {
+    align-self: flex-end;
+    padding: 5%;
+
+}
+.secSeven .meet {
+    display: flex;
+    padding-bottom: 15%;
+}
+
+.secSeven .line {
+    background-color: #3da696;
+}
+
+.secSeven .reflection p {
+    text-align: center;
+    color: #2c8b85;
+    
+}
+
+.secSeven .reflection h3 {
+    text-decoration: underline;
+    padding: 4%;
+    text-align: center;
+    color: #1e8276;
+}
